@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // Your backend server URL
+        target: 'https://yourhr-backend-rci1.onrender.com', // Your backend server URL
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''), // Rewrite path if necessary
       },
